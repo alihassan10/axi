@@ -1,0 +1,77 @@
+$('#main-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:4500,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+
+$('#testimonial-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    center:true,
+    autoplay:true,
+    margin: 20,
+    autoplayTimeout:3500,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+$('#property-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    margin: 20,
+    autoplayTimeout:3500,
+    responsive:{
+        0:{
+            items:1
+        },
+        700:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+$('#client-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    margin: 20,
+    autoplayTimeout:2500,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+})
