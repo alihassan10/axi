@@ -68,7 +68,7 @@ section{
     transition: .5s all ease;
 }
 .btn:hover{
-    background-color: #f82323;
+    background-color: var(--nav-back);
     color: #ffffff;
     border-color: #fff;
     /* changing required for red color */
@@ -157,7 +157,7 @@ section{
     
   } */
 .about-box .btn:hover{
-    background-color: var(--blue);
+    /* background-color: ; */
     /* changing required for color */
 }
 .service-box .icon{
@@ -186,81 +186,6 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
 }
-/* 
-.demo{ 
-    background: var(--blue); 
-    padding: 50px 0 40px 0; 
-  }
-  .demo .testimonial{
-      background: #fff;
-      text-align: center;
-      padding: 30px 30px 50px;
-      margin: 0 15px 100px;
-      position: relative;
-  }
-  .demo .testimonial:before,
-  .demo .testimonial:after{
-      content: "";
-      border-top: 40px solid #fff;
-      border-right: 125px solid transparent;
-      position: absolute;
-      bottom: -40px;
-      left: 0;
-  }
-  .demo .testimonial:after{
-      border-right: none;
-      border-left: 125px solid transparent;
-      left: auto;
-      right: 0;
-  }
-  .demo .testimonial .icon{
-      display: inline-block;
-      font-size: 80px;
-      color: var(--black);
-      margin-bottom: 20px;
-      opacity: 0.6;
-  }
-  .demo .testimonial .description{
-      font-size: 15px;
-      text-align: left;
-      margin-bottom: 30px;
-  }
-  .demo .testimonial .testimonial-content{
-      width: 100%;
-      position: absolute;
-      left: 0;
-  }
-  .demo .testimonial .pic{
-      display: inline-block;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 2px 2px var(--blue);
-      overflow: hidden;
-      z-index: 1;
-      position: relative;
-  }
-  .demo .testimonial .pic img{
-      width: 100%;
-      height: auto;
-  }
-  .demo .testimonial .title{
-      font-size: 15px;
-      font-weight: bold;
-      color: #fff;
-      text-transform: capitalize;
-      margin: 0 0 5px 0;
-  }
-  .demo .testimonial .post{
-      display: block;
-      font-size: 14px;
-      color: #ffffff;
-  }
-  
-  @media only screen and (max-width: 650px) and (min-width: 400px){
-    .demo .testimonial:before{ border-right: 325px solid transparent; }
-    .demo .testimonial:after{ border-left: 325px solid transparent; }
-  } */
-  
 .testimonial-bottom-icon{
     color: var(--red);
 }
@@ -270,7 +195,7 @@ section{
 }
 .testimonial-box-detail{
     box-shadow: 0 4px 15px #d3d3d3;
-    
+    padding: 15px;
 }
 #testimonial-carousel .item{
     padding: 20px 0 20px 0;
