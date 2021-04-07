@@ -4,7 +4,7 @@ html{
 :root{
       --blue: #007bff;
       --red: #ff5a5f;
-      --d-red: #f82323;
+      --btn-red: #f82323;
       --nav-back: #f08080;
 }
 h1,h2,h3,h4,h5,h6{
@@ -68,7 +68,7 @@ section{
     transition: .5s all ease;
 }
 .btn:hover{
-    background-color: var(--nav-back);
+    background-color: var(--btn-red);
     color: #ffffff;
     border-color: #fff;
     /* changing required for red color */
@@ -85,9 +85,10 @@ section{
     display: inline-block;
     transition: .5s all ease;
 }
+/* -----   Navbar   ----- */
 .navbar{
     padding: 15px 0px 15px 15px;
-    background-color: #f08080;
+    background-color: var(--nav-back);
 }
 .nav-link{
     color: #fff!important;
@@ -100,9 +101,10 @@ section{
     color: var(--red);
     background-color: #fff;
 }
-.nav-btn .btn:hover{
+.nav-btn a:hover{
     background-color: var(--red);
 }
+/* -----   Main Banner   ----- */
 .main-banner-box{
     position: relative;
     overflow: hidden;
@@ -114,52 +116,42 @@ section{
     transform: translate(-120%,-50%);
     color: #fff;
     transition: .2s all ease;
-    /* animation-name: mymove;
-    animation-duration: 4s; */
     background-color: #000000a6;
     padding: 10px 0;
 }
-.main-banner-heading{
-    transition: .5s all ease;
-    animation-duration: 2s!important;
-    animation-delay: 1s;
-}
-.main-banner-text{
-    /* opacity: 0;
-    transition: 2s all ease */
-    animation-duration: 3s!important;
-    animation-delay: 2s;
+.main-banner-text a:hover{
+    /* border-color: #fff; */
+     /* its working with a as well btn */
 }
 .main-banner-text a{
     border: none;
 }
-.heading1{
-    animation-delay: 0s
+/* -----   Experties   ----- */
+.experties-box{
+    border: 1px solid #ececec;
+    transition: .8s all ease;
 }
-.heading2{
-    animation-delay: 5s
+.experties-box:hover{
+    box-shadow: 0 0 10px 0 #ababab;
 }
-.heading3{
-    animation-delay: 9s
+.experties-box .icon{
+        font-size: 25px;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        border-radius: 50%;
+        color: #fff;
+        background-color: var(--red);
+        transition: 1.1s all ease;
 }
-.text1{
-    animation-delay: 1s
+.experties-box:hover span{
+    transform: scale(1.3);
 }
-.text2{
-    animation-delay: 6s
-}
-.text3{
-    animation-delay: 10s
-}
-/* @keyframes mymove{
-    from {top: 180px;}
-    to {bottom: 50px;}
-    
-  } */
+/* -----   About   ----- */
 .about-box .btn:hover{
-    /* background-color: ; */
-    /* changing required for color */
+    border: 1px solid #000;
 }
+/* -----   Services   ----- */
 .service-box .icon{
     font-size: 35px;
     width: 75px;
@@ -168,6 +160,7 @@ section{
     border-radius: 50%;
     color: #fff;
     background-color: var(--red);
+    transition: 1.1s all ease;
 }
 .service-box{
     background-color: #fcf7f7;
@@ -175,6 +168,35 @@ section{
 .service-box:hover span{
     transform: scale(1.2);
 }
+/* -----   Stat   ----- */
+#stat{
+    background-image: url(../images/stat/stat-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+}
+.stat-box .stat-icon{
+    font-size: 60px;
+    transition: 1s all ease;
+}
+.stat-box{
+    color: var(--red);
+}
+.stat-box:hover .stat-icon{
+    transform: scale(1.5);
+}
+/* -----   Team   ----- */
+.team-box img{
+    transition: .5s all ease;
+}
+.team-box:hover img{
+    transform: scale(1.1);
+}
+.team-icon .icon:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+/* -----   Video   ----- */
 .video-box-right{
     position: relative;
 }
@@ -186,6 +208,7 @@ section{
     left: 50%;
     transform: translate(-50%,-50%);
 }
+/* -----   Testimonial   ----- */
 .testimonial-bottom-icon{
     color: var(--red);
 }
@@ -205,39 +228,11 @@ section{
     opacity: 1!important;
     transform: scale(1.05);
 }
-.contact-box .btn{
-    padding: 12px 40px;
-}
-.team-box img{
-    transition: .5s all ease;
-}
-.team-box:hover img{
-    transform: scale(1.1);
-}
-.team-icon .icon:hover{
-    background-color: var(--red);
-    color: #fff;
-}
-#stat{
-    background-image: url(../images/stat/stat-bg.jpg);
-    background-repeat: no-repeat;
-    background-position: cover;
-    background-attachment: fixed;
-}
-.stat-box .stat-icon{
-    font-size: 60px;
-    transition: 1s all ease;
-}
-.stat-box{
-    color: var(--red);
-}
-.stat-box:hover .stat-icon{
-    transform: scale(1.5);
-}
+/* -----   Blog   ----- */
 .blog-box p{
     color: var(--red);
 }
-.blog-box a{
+.blog-icon a{
     color: #000;
 }
 .blog-icon-text{
@@ -258,6 +253,7 @@ section{
 .blog-box:hover img{
     transform: scale(1.01);
 }
+/* -----   Footer   ----- */
 .footer-icon-color{
     color: var(--red);
 }
@@ -284,6 +280,43 @@ footer{
     border-top: 2px solid #c0bcbc;
     padding-top: 20px;
 }
+/* -----   Contact   ----- */
+.contact-box .btn{
+    padding: 12px 40px;
+}
+/* -----   Blog Detail   ----- */
+.detail-icon-date-comment a{
+    color: #000;
+}
+.detail-color{
+    color: var(--red);
+}
+.detail-comment-img-heading a{
+    color: var(--red);
+}
+.detail-text-icon{
+    background-color: #d8d4d4;
+    padding: 10px 0 10px 5px;
+    /* color: var(--red)!important; */
+}
+.detail-text-icon-text a{
+    color: var(--red)!important;
+}
+.detail-text-icon-icon a{
+    color: var(--red)!important;
+}
+.right-list a{
+    color: var(--red);
+}
+.right-img-heading-date a{
+    color: var(--red);
+}
+.right-tags-name a{
+    background-color: #c9cbce;
+    color: var(--red);
+    padding: 5px;
+}
+/* -----   Media Quries   ----- */
 @media only screen and (max-width:575px){
     .footer-box{
         text-align: center;
