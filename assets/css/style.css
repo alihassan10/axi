@@ -317,6 +317,20 @@ footer{
     padding: 5px;
 }
 /* -----   Media Quries   ----- */
+@media only screen and (max-width:340px){
+    .detail-text-icon-text{
+        display: none;
+    }
+    .detail-text-icon-icon{
+        text-align: center!important;
+        /* not workingggggggggggggggggggggggggggggggggggggggggggggggggggg */
+    }
+}
+@media only screen and (max-width:415px){
+    .detail-text-icon{
+        font-size: 12px;
+    }
+}
 @media only screen and (max-width:575px){
     .footer-box{
         text-align: center;
