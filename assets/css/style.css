@@ -94,9 +94,6 @@ section{
     color: #fff!important;
     margin-right: 25px;
 }
-.home{
-    border-bottom: 2px solid var(--red);
-}
 .nav-btn a{
     color: var(--red);
     background-color: #fff;
@@ -174,6 +171,8 @@ section{
     background-repeat: no-repeat;
     background-position: cover;
     background-attachment: fixed;
+    /* background-color: var(--red);
+    background-blend-mode: color; */
 }
 .stat-box .stat-icon{
     font-size: 60px;
@@ -253,6 +252,10 @@ section{
 .blog-box:hover img{
     transform: scale(1.01);
 }
+/* -----   Client   ----- */
+#client{
+    padding: 15px 0;
+}
 /* -----   Footer   ----- */
 .footer-icon-color{
     color: var(--red);
@@ -266,8 +269,11 @@ section{
 .footer-tag-color{
     color: #aca8a8;
 }
-footer{
-    padding: 100px 0 0 0;
+/* footer{
+    padding: 70px 0 100px 0;
+} */
+.top-footer{
+    padding: 100px 0 70px 0;
 }
 .lower-footer-textarea{
     color: #fff;
@@ -278,7 +284,7 @@ footer{
 }
 .lower-footer-area{
     border-top: 2px solid #c0bcbc;
-    padding-top: 20px;
+    padding: 10px;
 }
 /* -----   Contact   ----- */
 .contact-box .btn{
@@ -317,23 +323,12 @@ footer{
     padding: 5px;
 }
 /* -----   Media Quries   ----- */
-@media only screen and (max-width:340px){
-    .detail-text-icon-text{
-        display: none;
-    }
-    .detail-text-icon-icon{
-        text-align: center!important;
-        /* not workingggggggggggggggggggggggggggggggggggggggggggggggggggg */
-    }
-}
-@media only screen and (max-width:415px){
-    .detail-text-icon{
-        font-size: 12px;
-    }
-}
-@media only screen and (max-width:575px){
-    .footer-box{
+@media only screen and (max-width:991px){
+    .lower-footer-textarea{
         text-align: center;
+    }
+    .lower-footer-icon{
+        text-align: center!important;
     }
 }
 @media only screen and (max-width:585px){
@@ -343,9 +338,19 @@ footer{
         width: 100%;
     }
 }
+@media only screen and (max-width:575px){
+    .footer-box{
+        text-align: center;
+    }
+}
 @media only screen and (max-width:497px){
     .main-banner-text a{
         display: none;
+    }
+}
+@media only screen and (max-width:415px){
+    .detail-text-icon{
+        font-size: 12px;
     }
 }
 @media only screen and (max-width:393px){
@@ -353,11 +358,12 @@ footer{
         display: none;
     }
 }
-@media only screen and (max-width:991px){
-    .lower-footer-textarea{
-        text-align: center;
+@media only screen and (max-width:340px){
+    .detail-text-icon-text{
+        display: none;
     }
-    .lower-footer-icon{
+    .detail-text-icon-icon{
         text-align: center!important;
+        /* not workingggggggggggggggggggggggggggggggggggggggggggggggggggg */
     }
 }
