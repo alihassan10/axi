@@ -257,35 +257,42 @@ section{
     padding: 15px 0;
 }
 /* -----   Footer   ----- */
-.footer-icon-color{
+.upper-footer{
+    padding: 80px 0 25px 0;
+    color: var(--white);
+    background-color: #212426;
+  }
+  .upper-footer a{
+    color: var(--white);
+  }
+  .latest-news a {
+   color: var(--white);
+   display: inline-block;
+ }
+ .latest-news p{
+   /* padding: 10px 0; */
+   color: #878787;
+ }
+ .latest-news a:hover {
+   color: var(--red);
+ }
+ .footer-icon-color{
     color: var(--red);
 }
-.footer-box{
-    color: #fff;
-}
-.footer-box a{
-    color: #fff;
-}
-.footer-tag-color{
-    color: #aca8a8;
-}
-/* footer{
-    padding: 70px 0 100px 0;
-} */
-.top-footer{
-    padding: 100px 0 70px 0;
-}
-.lower-footer-textarea{
-    color: #fff;
-}
-.lower-footer-icon .icon:hover{
+  .lower-footer{
+     background: #1F1E23;
+     padding: 15px 0 10px 0;
+     color: var(--white);
+  }
+  .lower-footer-textarea a{
+      font-weight: bold;
+      color: var(--red);
+  }
+  .lower-footer-icon .icon:hover{
     background-color: var(--red);
     color: #fff;
 }
-.lower-footer-area{
-    border-top: 2px solid #c0bcbc;
-    padding: 10px;
-}
+
 /* -----   Contact   ----- */
 .contact-box .btn{
     padding: 12px 40px;
@@ -324,13 +331,32 @@ section{
 }
 /* -----   Media Quries   ----- */
 @media only screen and (max-width:991px){
+    
+}
+@media only screen and (max-width:767px){
+    .upper-footer{
+      text-align: center;
+    }
+    .footer-contact-box span{
+      padding-left: 0;
+    }
     .lower-footer-textarea{
-        text-align: center;
+     text-align: center;
+     margin-bottom: 5px;
     }
     .lower-footer-icon{
-        text-align: center!important;
+     text-align: center!important;
+ }
+  }
+@media only screen and (min-width:767px){
+    .lower-footer-copyright-link{
+        float: left;
     }
-}
+     .lower-footer-icon{
+         float: right;
+     }
+ }
+
 @media only screen and (max-width:585px){
     .main-banner-text p{
         font-size: 12px;
@@ -339,9 +365,9 @@ section{
     }
 }
 @media only screen and (max-width:575px){
-    .footer-box{
+    /* .footer-box{
         text-align: center;
-    }
+    } */
 }
 @media only screen and (max-width:497px){
     .main-banner-text a{
@@ -365,5 +391,10 @@ section{
     .detail-text-icon-icon{
         text-align: center!important;
         /* not workingggggggggggggggggggggggggggggggggggggggggggggggggggg */
+    }
+}
+@media only screen and (max-width:320px){
+    .footer-about-link a{
+        font-size: 13px;
     }
 }
