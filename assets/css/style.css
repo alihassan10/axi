@@ -228,7 +228,7 @@ section{
     transform: scale(1.05);
 }
 /* -----   Blog   ----- */
-.blog-box p{
+.blog-head p{
     color: var(--red);
 }
 .blog-icon a{
@@ -238,7 +238,7 @@ section{
     color: var(--red);
 }
 .blog-box h4{
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 .blog-box{
     box-shadow: 0 4px 15px #d3d3d3;
